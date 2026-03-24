@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>AetherGuard – Air Quality Platform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="ui.css" />
+</head>
+<body>
+  <div class="dashboard-container">
+    <header class="dashboard-header">
+      <button class="menu-toggle" id="menuToggle">☰</button>
+      <div class="brand">
+        <span class="brand-logo">AG</span>
+        <div class="brand-text">
+          <h1>AetherGuard</h1>
+          <p>Real‑time air quality & predictive analytics</p>
+        </div>
+      </div>
+    </header>
+
+    <aside class="dashboard-sidebar" id="sidebar">
+      <nav class="nav">
+        <a href="#/home"     class="nav-link active" data-route="home">🏠 Home</a>
+        <a href="#/live"     class="nav-link"        data-route="live">📡 Live Sensors</a>
+        <a href="#/predict"  class="nav-link"        data-route="predict">🤖 Predictive Analysis</a>
+        <a href="#/history"  class="nav-link"        data-route="history">📊 Daily / Weekly / Monthly</a>
+        <a href="#/settings" class="nav-link"        data-route="settings">⚙️ Settings</a>
+      </nav>
+    </aside>
+
+    <main class="dashboard-main">
+      <div id="page-root"><!-- SPA content injected here --></div>
+    </main>
+  </div>
+
+  <script src="spa.js" type="module"></script>
+</body>
+</html>

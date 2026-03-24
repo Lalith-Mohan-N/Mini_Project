@@ -1,0 +1,21 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Java / Maven
+target/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# DB / models
+aetherguard.db
+*.joblib
+
+# OS cruft
+.DS_Store
+Thumbs.db
